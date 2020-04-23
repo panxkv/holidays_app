@@ -8,10 +8,18 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'warden', '~> 1.2', '>= 1.2.8'
+gem 'grape'
+gem 'grape-entity', '~> 0.5.0'
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
+gem 'rubocop', '~> 0.82.0'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-its'
   gem 'rspec-rails', '~> 4.0'
+  gem 'factory_bot_rails'
+  gem 'faker', '~> 2.11'
 end
 
 group :development do
